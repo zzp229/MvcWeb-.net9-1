@@ -18,7 +18,7 @@ namespace MvcWeb
                 builder.Services.AddEndpointsApiExplorer();
                 builder.Services.AddSwaggerGen(options =>
                 {
-                    #region 支持注释
+                    #region 
                     string basePath = AppContext.BaseDirectory;
                     string xmlPath = Path.Combine(basePath, "MvcWeb.xml");  // 项目名称.xml
                     options.IncludeXmlComments(xmlPath);    // 加上这个才会在swagger中增加注释
